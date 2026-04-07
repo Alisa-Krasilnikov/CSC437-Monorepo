@@ -1,0 +1,23 @@
+{
+  "name": "csc437-monorepo",
+  "version": "1.0.0",
+  "description": "Labs done for CSC437",
+  "homepage": "https://github.com/Alisa-Krasilnikov/CSC437-Monorepo#readme",
+  "bugs": {
+    "url": "https://github.com/Alisa-Krasilnikov/CSC437-Monorepo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisa-Krasilnikov/CSC437-Monorepo.git"
+  },
+  "license": "ISC",
+  "author": "Alisa Krasilnikov",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "workspaces": [
+        "packages/*"
+    ]
+}
