@@ -1,0 +1,59 @@
+body {
+    color: var(--color-text-base);
+    background-color: var(--color-bg);
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+header {
+    padding: 5px 10px;
+    background-color: var(--color-primary);
+    display: flex; 
+  }
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    padding: 5px 10px;
+    background-color: var(--color-secondary);
+  }
+a:link {
+  color: var(--color-link);
+  }
+a:visited {
+  color: var(--color-link-visited);
+}
+.information{
+  width: 220px;
+  padding: 10px;
+  border-width: 5px;
+  background-color: var(--color-table-header);
+  border-style: solid; 
+  border-color: var(--color-border);
+  dt { color: var(--color-text-light);}
+  dl { color: var(--color-text-dark);}
+  a:link {color: var(--color-link-info);}
+  a:visited {color: var(--color-link-info-visited);}
+}
+table {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-color: var(--color-border);
+  border-width: 3px;
+  border-style: solid;
+}
+td {
+    background-color: var(--color-table-fill);
+}
+th {
+    background-color: var(--color-table-header);
+    color: var(--color-text-light)
+}
+
+tr:hover td {background-color: var(--color-accent-hover);}
+
+img {border-style: solid; 
+  border-width: 3px;
+  border-color: var(--color-border);}

@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #FA9600;
+  --color-secondary: #BABD8D;
+  --color-bg: #E6FAFC;
+  --color-table-fill: #ffffff;
+  --color-table-header: #CA6680;
+  --color-accent-hover: coral;
+  --color-border: #551B14;
+  --color-text-base: #12263a;
+  --color-text-light: #E6FAFC;
+  --color-text-dark: #020001;
+  --color-link: #7C6A0A;
+  --color-link-visited: #EB6424;
+  --color-link-info: #19297C;
+  --color-link-info-visited: #CDC1FF;
+}
