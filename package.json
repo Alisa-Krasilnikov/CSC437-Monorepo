@@ -17,7 +17,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "workspaces": [
-        "packages/*"
-    ]
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
