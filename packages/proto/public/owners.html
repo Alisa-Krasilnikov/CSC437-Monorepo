@@ -2,24 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
   </head>
   <body>
     <header>
-      <h1>All Owners</h1>
+      <div class="title-group">
+        <h1>
+          <a href="index.html">
+            <svg class="icon"><use href="/icons/user.svg#horse-user"/></svg>
+            PaddockPro
+          </a>
+        </h1>
+        <h2>All Owners</h2>
+      </div>
+      
+      <nav>
+        <a href="horses.html">All Horses</a>
+        <a href="owners.html">All Owners</a>
+      </nav>
     </header>
+    
+    <div class="page">
+    <main class="main-content">
     <section>
-      <ul>
+      <ul class = "links-list">
         <li><a href="owner.html">Alisa K.</a></li>
         <li><a href="owner.html">Dana A.</a></li>
         <li><a href="owner.html">Elena L.</a></li>
         <li><a href="owner.html">James D.</a></li>
       </ul>
     </section>
-    <a href="index.html">Back to Barn</a>
+  </main>
+    </div>
     </body>
 </html>

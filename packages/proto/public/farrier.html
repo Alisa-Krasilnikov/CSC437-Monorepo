@@ -2,28 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
   </head>
   <body>
     <header>
-      <h1>Addie's Farrier Information</h1>
+      <div class="title-group">
+        <h1>
+          <a href="index.html">
+            <svg class="icon"><use href="/icons/user.svg#horse-user"/></svg>
+            PaddockPro
+          </a>
+        </h1>
+        
+        <h2>
+          <a href="horse.html">Addie</a>'s Farrier Information
+        </h2>
+      </div>
+      <nav>
+        <a href="horses.html">All Horses</a>
+        <a href="owners.html">All Owners</a>
+      </nav>
     </header>
-    <br>
-    <h2>Tony Knust</h2>
-    <br>
-    <section class = "information">
-      <dl>
-        <dt>Phone Number:</dt>
-        <dd>(805)555-3333</dd>
-      </dl>
-    </section>
-    <br>
+
+
+    <div class="page">
+
+    <aside class="sidebar">
+      <h2>Tony Knust</h2>
+          <section class = "information">
+            <dl>
+              <dt>Phone Number:</dt>
+              <dd>(805)555-3333</dd>
+            </dl>
+          </section>
+    </aside>
+
+    <main class="main-content">
     <h2>Schedule</h2>
-    <br>
     <section>
       <dl>
         <dt><strong>Shoe Type:</strong></dt>
@@ -34,8 +55,6 @@
         <dd>04/08/2026</dd>
       </dl>
     </section>
+    </main>
   </body>
-  <br>
-  <a href="horse.html">Back to Horse</a> <br>
-  <a href="index.html">Back to Barn</a>
 </html>

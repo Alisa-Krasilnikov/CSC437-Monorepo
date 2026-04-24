@@ -2,28 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
   </head>
   <body>
     <header>
-      <h1>All Horses</h1>
-    </header>
-    <section>
-        <ul>
-            <li><a href="horse.html">Addie</a></li>
-            <li><a href="horse.html">Butters</a></li>
-            <li><a href="horse.html">Champ</a></li>
-            <li><a href="horse.html">Bleu</a></li>
-            <li><a href="horse.html">Orange</a></li>
-            <li><a href="horse.html">AppleJack</a></li>
-            <li><a href="horse.html">Pinto</a></li>
-            <li><a href="horse.html">Alfred</a></li>
-        </ul>
-    </section>
-    <a href="index.html">Back to Barn</a>
+      <div class="title-group">
+        <h1>
+          <a href="index.html">
+            <svg class="icon"><use href="/icons/user.svg#horse-user"/></svg>
+            PaddockPro
+          </a>
+        </h1>
+        <h2>All Horses</h2>
+      </div>
+    <nav>
+      <a href="horses.html">All Horses</a>
+      <a href="owners.html">All Owners</a>
+    </nav>
+  </header>
+
+    <div class="page">
+      <main class="main-content">
+        <section>
+          <ul class = "links-list">
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Addie</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Butters</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Champ</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Bleu</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Orange</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>AppleJack</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Pinto</a></li>
+              <li><a href="horse.html"><svg class="icon"><use href="/icons/user.svg#horse-horse"/></svg>Alfred</a></li>
+          </ul>
+      </section>
+    </main>
+      </div>
     </body>
 </html>

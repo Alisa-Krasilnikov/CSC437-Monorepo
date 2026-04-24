@@ -2,23 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
   </head>
   <body>
     <header>
-      <h1>Addie</h1>
+      <div class="title-group">
+        <h1>
+          <a href="index.html">
+            <svg class="icon"><use href="/icons/user.svg#horse-user"/></svg>
+            PaddockPro
+          </a>
+        </h1>
+        <h2>
+          <a href="horse.html">Addie</a>
+        </h2>
+      </div>
+      <nav>
+        <a href="horses.html">All Horses</a>
+        <a href="owners.html">All Owners</a>
+      </nav>
     </header>
-    <br>
-    <div style="display: flex; align-items: flex-start;">
-      <img src="images/addie.jpg"
-      height="300"
-      alt="A picture of Addie, a bay horse with a white stripe down her face, with her tongue sticking out"
-      style="margin-right: 20px;">
-      <section class="information">
+
+
+    <div class="page">
+
+     <aside class="sidebar">
+        <img src="images/addie.jpg"
+        alt="A picture of Addie, a bay horse with a white stripe down her face, with her tongue sticking out"
+             style="width: 100%;">
+
+         <section class="information">
         <dl>
           <dt>Date of Birth:</dt>
           <dd>05/07/2007</dd>
@@ -32,19 +51,18 @@
           <dd><a href="owner.html">Alisa Krasilnikov</a></dd>
         </dl>
       </section>
+      </aside>
+
+     <main class="main-content">
+        <h2>Care</h2>
+        <ul class="care-list">
+          <li><a href="exercises.html">Exercise</a></li>
+          <li><a href="feeding.html">Feeding</a></li>
+          <li><a href="medrecords.html">Medication and Vet Records</a></li>
+          <li><a href="farrier.html">Farrier Records</a></li>
+        </ul>
+      </main>
+
     </div>
-    <br>
-    <section>
-      <h2>Care:</h2>
-      <ul>
-        <li><a href="exercises.html">Exercise</a></li>
-        <li><a href="feeding.html">Feeding</a></li>
-        <li><a href="medrecords.html">Medication and Vet Records</a></li>
-        <li><a href="farrier.html">Farrier Records</a></li>
-      </ul>
-    </section>
-    <br>
-    <a href="board.html">Back to Board</a> <br>
-    <a href="index.html">Back to Barn</a>
   </body>
 </html>

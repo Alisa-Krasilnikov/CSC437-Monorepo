@@ -2,81 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
   </head>
   <body>
+
     <header>
-      <h1>Exercise Schedule for Addie</h1>
+      <div class="title-group">
+        <h1>
+          <a href="index.html">
+            <svg class="icon"><use href="/icons/user.svg#horse-user"/></svg>
+            PaddockPro
+          </a>
+        </h1>
+        
+        <h2>
+          <a href="horse.html">Addie</a>'s Exercise Schedule
+        </h2>
+      </div>
+      <nav>
+        <a href="horses.html">All Horses</a>
+        <a href="owners.html">All Owners</a>
+      </nav>
     </header>
-    <br>
-    <section>
-      <h2>Turnout:</h2>
-      <p>5 times per week</p>
-    </section>
-    <section>
-      <h2>Exercise:</h2>
-      <br>
-      <table>
-        <tr>
-          <th>Day</th>
-          <th>Exercise</th>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>Hand walk</td>
-        </tr>
-        <tr>
-          <td>Tuesday</td>
-          <td>Lunge</td>
-        </tr>
-        <tr>
-          <td>Wednesday</td>
-          <td>Pasture turn out</td>
-        </tr>
-        <tr>
-          <td>Thursday</td>
-          <td>30 min ride</td>
-        </tr>
-        <tr>
-          <td>Friday</td>
-          <td>Hand Walk</td>
-        </tr>
-        <tr>
-          <td>Saturday</td>
-          <td>Hour trail ride</td>
-        </tr>
-        <tr>
-          <td>Sunday</td>
-          <td>Pasture turn out</td>
-        </tr>
-      </table>
-    <br>
-    </section>
-    <h2>Tack:</h2>
-    <br>
-    <section class = "information">
-        <dt>Saddle:</dt>
-          <dd>Fallis balance ride western saddle</dd>
-        <dt>Saddle Pad:</dt>
-          <dd>Impact gel saddle pad</dd>
-        <dt>Saddle Blanket:</dt>
-          <dd>N/A</dd>
-        <dt>Leg wraps:</dt>
-          <dd>Polo wraps</dd>
-        <dt>Bridle:</dt>
-          <dd>Hackamore or halter</dd>
-    </section>
-    <br>
-    <section>
-      <h2>Exercise Notes:</h2>
-      <p>Addie cannot go above a trot during rides.</p>
-    </section>
-    <br>
-    <a href="horse.html">Back to Horse</a> <br>
-    <a href="index.html">Back to Barn</a>
+
+    <div class="page">
+
+      <aside class="sidebar">
+        <h2>Tack</h2>
+        <section class="information">
+          <dl>
+            <dt>Saddle</dt>
+            <dd>Fallis balance ride western saddle</dd>
+            <dt>Saddle Pad</dt>
+            <dd>Impact gel saddle pad</dd>
+            <dt>Saddle Blanket</dt>
+            <dd>N/A</dd>
+            <dt>Leg Wraps</dt>
+            <dd>Polo wraps</dd>
+            <dt>Bridle</dt>
+            <dd>Hackamore or halter</dd>
+          </dl>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <section>
+          <h2>Turnout:</h2>
+          <p>5 times per week</p>
+        </section>
+        <h2>Exercise Schedule</h2>
+        <section>
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Exercise</th>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>Hand walk</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Lunge</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Pasture turn out</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>30 min ride</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Hand walk</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Hour trail ride</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>Pasture turn out</td>
+            </tr>
+          </table>
+        </section>
+      </main>
+
+    </div>
+
   </body>
 </html>

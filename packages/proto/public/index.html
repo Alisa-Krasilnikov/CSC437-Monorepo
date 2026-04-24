@@ -3,60 +3,74 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
   </head>
   <body>
+
   <header>
-    <h1> Coastal Equine</h1>
+    <div class="title-group">
+      <h1>
+        <a href="index.html">
+          <svg class="icon"><use href="/icons/user.svg#horse-user"/></svg>
+          PaddockPro</a>
+      </h1>
+      <h2>
+        Coastal Equine
+      </h2>
+    </div>
+
+    <nav>
+      <a href="horses.html">All Horses</a>
+      <a href="owners.html">All Owners</a>
+    </nav>
   </header>
-  <br>
-  <div style="display: flex; align-items: flex-start;">
-    <section class="information">
-      <dl>
-        <dt><strong>Address:</strong></dt>
-        <dd>1234 Internet Street<br>
-          San Luis Obispo, CA <br>
-          93405</dd>
-        <dt><strong>Phone Number:</strong></dt>
-        <dd>(805)555-6005</dd>
-      </dl>
-    </section>
-    <img src="images/coastalEquine.jpg" 
-    height="300"
-    alt="Aerial view of Coastal Equine, overlooking the property and Bishop peak, with the back outdoor stables in the forefront, and a view of the arenas"
-    style="margin-left: auto;">
-  </div>
-    <br>
-    <h2>Boarding:</h2>
-    <section>
-      <ul>
-        <li>
-          <svg class="icon">
-            <use href="/icons/board.svg#outdoor-stables"/>
-          </svg> 
-          <a href="board.html">Outdoor Stables</a></li>
-        <li>
-          <svg class="icon">
-            <use href="/icons/board.svg#indoor-stables"/>
-          </svg> 
-          <a href="board.html">Indoor Stables</a></li>
-        <li>
-          <svg class="icon">
-            <use href="/icons/board.svg#shared-pasture"/>
-          </svg> 
-          <a href="board.html">Shared Pasture</a></li>
-      </ul>
-    </section>
-    <h2>Quick Links:</h2>
-    <section>
-      <ul>
-        <li><a href="horses.html">All Horses</a></li>
-        <li><a href="owners.html">All Owners</a></li>
-      </ul>
-    </section>
+
+    <div class="page">
+
+     <aside class="sidebar">
+        <img src="images/coastalEquine.jpg"
+             alt="Aerial view of Coastal Equine, overlooking the property and Bishop Peak"
+             style="width: 100%;">
+
+        <section class="information">
+          <dl>
+            <dt>Address</dt>
+            <dd>1234 Internet Street<br>San Luis Obispo, CA 93405</dd>
+            <dt>Phone Number</dt>
+            <dd>(805) 555-6005</dd>
+          </dl>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <h2>Boarding</h2>
+        <section>
+          <ul class="boarding-list">
+            <li>
+              <svg class="icon"><use href="/icons/board.svg#outdoor-stables"/></svg>
+              <a href="board.html">Outdoor Stables</a>
+            </li>
+            <li>
+              <svg class="icon"><use href="/icons/board.svg#indoor-stables"/></svg>
+              <a href="board.html">Indoor Stables</a>
+            </li>
+            <li>
+              <svg class="icon"><use href="/icons/board.svg#shared-pasture"/></svg>
+              <a href="board.html">Shared Pasture</a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+    </div>
+
   </body>
 </html>
