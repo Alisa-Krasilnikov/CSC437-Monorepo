@@ -23,3 +23,16 @@
   --border-sm:  3px;
   --border-lg:  5px;
 }
+  body.dark-mode {
+  --color-bg: #12263a;
+  --color-text-base: var(--color-text-light);
+  --color-primary: #7C6A0A;
+  --color-secondary: #BE5103;
+  --color-link: #EB6424;
+  --color-link-visited: #7C6A0A;
+  --color-table-header: #551B14;
+  --color-border: #CA6680;
+  --color-text-dark: #FA9600;
+  --color-text-light: #E6FAFC;
+  --color-table-fill:#020001; 
+}

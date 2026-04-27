@@ -148,6 +148,7 @@ header a:link, header a:visited {
   border: var(--border-sm) solid var(--color-border);
   background-color: var(--color-table-fill);
 }
+
 table {
   border-collapse: collapse;
 }
