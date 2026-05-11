@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/page.css" />
+    <script type="importmap">
+    {
+      "imports": {
+        "@unbndl/html": "https://unpkg.com/@unbndl/html"
+      }
+    }
+    </script>
+    <script type="module">
+      import { define } from "@unbndl/html";
+      import { HorseElement } from "/js/horse.js";
+
+      define({
+        "horse-stuff": HorseElement
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -40,26 +55,8 @@
 
     <div class="page">
 
-     <aside class="sidebar">
-        <img src="images/addie.jpg"
-        alt="A picture of Addie, a bay horse with a white stripe down her face, with her tongue sticking out"
-             style="width: 100%;">
-
-         <section class="information">
-        <dl>
-          <dt>Date of Birth:</dt>
-          <dd>05/07/2007</dd>
-          <dt>Breed:</dt>
-          <dd>Half Arabian</dd>
-          <dt>Color:</dt>
-          <dd>Bay</dd>
-          <dt>Height:</dt>
-          <dd>5.5 Hands</dd>
-          <dt>Owner:</dt>
-          <dd><a href="owner.html">Alisa Krasilnikov</a></dd>
-        </dl>
-      </section>
-      </aside>
+     <horse-wrapper src="/data/horse.json">
+      </horse-wrapper>
 
      <main class="main-content">
         <h2>Care</h2>
